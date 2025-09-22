@@ -130,7 +130,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Wat goed ging was het hamburgermenu. Ik heb het beter gemaakt dan de originele website omdat de navigatie in mijn hamburgermenu groter is op het mobiele scherm. Dat maakt de site ook beter toegankelijk voor mensen die moeite hebben met het bewegen van hun handen. Wat ik lastig vond was de grid op brede schermen. Door de oefening opnieuw te bekijken is het me toch gelukt om een mooie website te maken. Ik vond het superleuk om hiermee bezig te zijn en ik merk dat ik het vak echt steeds leuker begin te vinden!
 
 
   ### Agenda voor meeting
