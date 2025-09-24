@@ -247,13 +247,13 @@ footer ul:nth-of-type(1) li a:hover {
 	color: rgb(108, 44, 236);;
 }
 
-footer ul:nth-of-type(2) {
+footer > section > article:nth-of-type(2) ul {
 	display: flex;
 	gap: 1em;
 	padding: 0;
 }
 
-footer ul:nth-of-type(2) li a {
+footer > section > article:nth-of-type(2) li a {
   background-color: rgb(46, 220, 179);
   display: flex; 
   justify-content: center;
@@ -263,7 +263,118 @@ footer ul:nth-of-type(2) li a {
   height: 40px;
 }
 
-footer ul:nth-of-type(2) li a:hover{
+footer > section > article:nth-of-type(2) li a:hover{
 	scale: 1.2;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************/
+/**************** formaat tablet 768px **************************/
+/****************************************************************/
+
+@media (min-width:48em) {
+  main > section:nth-of-type(2), footer > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+  }
+
+   
+
+ 
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************/
+/**************** Formaat  desktop 1024px ***********************/
+/****************************************************************/
+
+
+
+@media (min-width:64em) {
+  header > button {
+    display: none;
+    
+ }
+  
+  nav {
+    position: static;
+    translate: unset;
+    padding: 0.5em;
+    font-size: 1em;
+    
+  }
+  
+  nav button {
+    display: none;
+    
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.5em; 
+    
+    
+  }
+  
+  nav a {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    
+  }
+  
+  header > a:last-of-type {
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+
+
+  main > section:nth-of-type(2), footer > section {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 3em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 
