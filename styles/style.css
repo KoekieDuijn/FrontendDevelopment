@@ -47,13 +47,28 @@ header > button {
   background: none;
   border: none;
   display: block; 
-
 }
 
+header svg {
+  height: 24px;         
+  width: auto;
+}
 
-header img,
-footer img {
-  height: 20px;
+header a path {
+  fill: white;
+  transition: 0.1s;
+}
+
+header svg:hover path {
+  fill: rgb(46, 220, 179);
+}
+
+header a:focus {
+  outline: 2px solid rgb(255, 115, 0);  
+}
+
+header button:focus {
+  outline: 2px solid rgb(255, 115, 0);  
 }
 
 nav {
@@ -85,11 +100,16 @@ nav button {
 nav a {
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav a:hover {
   color: rgb(46, 220, 179);
   transition: 0.1s;
+}
+
+nav a:focus {
+  outline: 2px solid rgb(255, 115, 0);     
 }
 
 
@@ -123,6 +143,7 @@ main {
 h2 {
   font-size: 2em;
   line-height: 1em;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -161,8 +182,9 @@ main a:hover {
 }
 
 main a:focus {
-  border: solid red;
+  outline: 2px solid rgb(255, 115, 0);  
 }
+
 
 ul {
   list-style-type: none;
@@ -196,6 +218,23 @@ footer {
   padding-inline: 1rem;
   padding-top: 5em;
   line-height: 1.5em;
+}
+
+footer a svg:nth-of-type(1){
+  height: 20px;
+}
+
+footer svg:hover path{
+  fill: aqua;
+}
+
+footer a:focus{
+  outline: 2px solid rgb(255, 115, 0);   
+}
+
+
+footer img {
+  height: 20px;
 }
 
 form {
@@ -244,7 +283,7 @@ footer ul:nth-of-type(1) li a{
 }
 
 footer ul:nth-of-type(1) li a:hover {
-	color: rgb(108, 44, 236);;
+	color: rgb(108, 44, 236);
 }
 
 footer > section > article:nth-of-type(2) ul {
@@ -265,6 +304,15 @@ footer > section > article:nth-of-type(2) li a {
 
 footer > section > article:nth-of-type(2) li a:hover{
 	scale: 1.2;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: 2px solid rgb(255, 115, 0); 
+}
+
+footer button:focus {
+  outline: 2px solid rgb(255, 115, 0); 
 }
 
 
