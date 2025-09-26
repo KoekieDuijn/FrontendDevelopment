@@ -27,8 +27,6 @@
 
 
 
-
-
 /******************************************************************************/
 								/* Header */
 /******************************************************************************/
@@ -64,11 +62,15 @@ header svg:hover path {
 }
 
 header a:focus {
-  outline: 2px solid rgb(255, 115, 0);  
+  background-color: rgb(255, 115, 0); ; 
+  border: none;
+  outline: none;
+
 }
 
 header button:focus {
-  outline: 2px solid rgb(255, 115, 0);  
+  background-color: rgb(255, 115, 0); ; 
+  outline: none;  
 }
 
 nav {
@@ -137,6 +139,8 @@ nav a:focus {
 main {
 	padding-inline: 1rem;
 	line-height: 1.5em;
+  margin: 0 auto;      
+  max-width: 1200px;
 }
 
 
@@ -156,14 +160,27 @@ h4 {
 	font-weight: 300;
   }
 
-p:first-of-type {
-  text-transform: uppercase;
-  order: 1;
-  text-align: center;
-  font-size: 0.9em;
+main > section:first-of-type > p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    animation: glow 1s 4 alternate ease forwards; /* laternate = gaat heen en weer. forwards = blijf staan bij de laatste plek */
 }
-
-
+  
+@keyframes glow {
+  from {
+    color: white;
+    text-shadow: none;
+    font-size: 0.9em; /* begin consistent */
+  }
+  to {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(46, 220, 179),
+                0 0 15px rgb(46, 220, 179);
+    font-size: 1.5em;
+  }
+}
 
 main a {
   background-color: rgb(108, 44, 236);
@@ -182,7 +199,8 @@ main a:hover {
 }
 
 main a:focus {
-  outline: 2px solid rgb(255, 115, 0);  
+  background-color: rgb(255, 115, 0); ; 
+  outline: none;
 }
 
 
@@ -218,6 +236,7 @@ footer {
   padding-inline: 1rem;
   padding-top: 5em;
   line-height: 1.5em;
+  max-width: 1200px;
 }
 
 footer a svg:nth-of-type(1){
@@ -229,7 +248,8 @@ footer svg:hover path{
 }
 
 footer a:focus{
-  outline: 2px solid rgb(255, 115, 0);   
+  background-color: rgb(255, 115, 0); ; 
+  outline: none;
 }
 
 
@@ -254,6 +274,9 @@ input[type="email"] {
   border: none;
   border-radius: 0.5em;
   font-size: 1em;
+}
+input[required]:user-valid {
+  background: lightgreen;
 }
 
 footer button {
@@ -306,15 +329,26 @@ footer > section > article:nth-of-type(2) li a:hover{
 	scale: 1.2;
 }
 
+footer > section > article:nth-of-type(2) li a:focus{
+	background-color: rgb(255, 115, 0); ;
+  outline: none;
+}
+
 input[type="text"]:focus,
 input[type="email"]:focus {
-  outline: 2px solid rgb(255, 115, 0); 
+  background-color: rgb(255, 115, 0); 
+  outline: none;
 }
 
 footer button:focus {
-  outline: 2px solid rgb(255, 115, 0); 
+  background-color: rgb(255, 115, 0);  
+  border: rgb(255, 115, 0); 
+  outline: none;
 }
 
+footer span {
+  color: red;
+}
 
 
 

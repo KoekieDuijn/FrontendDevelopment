@@ -95,32 +95,32 @@
     <main>
       <h2>Spring / Summer '25 drop</h2>
 
-      <a href="#"
-        ><img src="images/shirt1.jpg" alt="T-shirt met logo in het rood" />
-        <h3>€45,00 euro</h3>
-        <h4>Verknipt brandmark T-shirt red</h4>
+      <a href="#" aria-label="The Verknipt brandmark T-shirt, red"
+        ><img src="images/shirt1.jpg" alt="The Verknipt brandmark T-shirt, red" />
+        <h3>Verknipt brandmark T-shirt red</h3>
+        <p>€45,00 euro</p>
       </a>
 
-      <a href="#"
-        ><img src="images/shirt2.jpg" alt="T-shirt met logo in het grijs" />
-        <h3>€45,00 euro</h3>
-        <h4>Verknipt brandmark T-shirt gray</h4>
+      <a href="#" aria-label="The Verknipt brandmark T-shirt, gray"
+        ><img src="images/shirt2.jpg" alt="The Verknipt brandmark T-shirt, gray" />
+        <h3>Verknipt brandmark T-shirt gray</h3>
+        <p>€45,00 euro</p>
         </a>
 
-      <a href="#"
+      <a href="#" aria-label="The Verknipt brandmark cap, gray"
         ><img
           src="images/pet1.jpg"
-          alt="Pet met het woord Verknipt in het grijs"/>
-        <h3>€30,00 euro</h3>
-        <h4>Verknipt washed cap</h4>
+          alt="The Verknipt brandmark cap, gray"/>
+          <h4>Verknipt washed cap</h4>
+          <p>€30,00 euro</p>
       </a>
 
-      <a href="#"
+      <a href="#" aria-label="The Verknipt brandmark T-shirt, purple"
         ><img
           src="images/shirt3.jpg"
-          alt="Pet met het woord Verknipt in het paars"/>
+          alt="The Verknipt brandmark T-shirt, purple"/>
         <h3>€45,00 euro</h3>
-        <h4>Verknipt skeumorphism t-shirt</h4>
+        <p>Verknipt skeumorphism t-shirt</p>
         </a>
     </main>
     <footer>
@@ -157,12 +157,12 @@
     <article>
       <h3>Subscripe</h3>
       <form>
-        <label>E-mail address</label>
-        <input type="text" />
-        <label>First name</label>
-        <input type="text" />
-        <label>Last name</label>
-        <input type="text" />
+        <label for="email">E-mail address <span>*</span></label>
+        <input type="email" id="email" required />
+        <label for="first_name">First name</label>
+        <input type="text" id="first_name" />
+        <label for="last_name">Last name</label>
+        <input type="text" id="last_name"/>
         <button>Subscripe</button>
       </form>
     </article>
