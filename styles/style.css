@@ -371,7 +371,7 @@ input[type="email"] {
   font-size: 1em;
 }
 
-input[required]:user-valid {
+input[required]:valid {
   background: var(--kleur-geldig);
 }
 
@@ -540,4 +540,19 @@ header h1 {
 
 header nav { 
   order: 3; 
+}
+
+
+
+
+/***************************************************************************************************/
+/*                                  beweeging uit zetten                                           */
+/***************************************************************************************************/
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
 }
