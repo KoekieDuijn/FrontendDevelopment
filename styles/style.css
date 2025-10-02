@@ -1,3 +1,43 @@
+@import url("https://use.typekit.net/rmv0osx.css");
+
+:root {
+  /* Basis */
+  --kleur-tekst: rgb(255 255 255);
+  --kleur-achtergrond: rgb(0 0 0);
+
+  /* Huisstijl */
+  --kleur-hoofd: rgb(108 44 236);
+  --kleur-accent: rgb(46 220 179);
+  --kleur-focus: rgb(255 115 0);
+
+  /* Formulier */
+  --kleur-geldig: lightgreen;
+  --kleur-fout: red;
+
+  color: var(--kleur-tekst);
+  background-color: var(--kleur-achtergrond);
+  font-family: "mundial", sans-serif;
+}
+
+:root.kerst {
+  --kleur-tekst: rgb(200 16 46);
+  --kleur-hoofd: rgb(0 158 96);  
+  --kleur-accent: rgb(255 203 5);   
+  --kleur-focus: rgb(255 115 0); 
+}
+
+:root.kerst main.index a {
+  color: white;
+}
+
+:root.kerst #kerst-knop {
+  color: #fff;
+}
+
+
+
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -7,74 +47,70 @@
   box-sizing: border-box;
 }
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-  /* startje */
-  @import url("https://use.typekit.net/rmv0osx.css");
-
-  --color-text: rgb(255 255 255);
-  --background-color: rgb(0 0 0);
-
-  color: var(--color-text);
-  background-color: var(--background-color);
-  font-family: "mundial", sans-serif;
-}
 
 
 
 
 
 
-/******************************************************************************/
-								/* Header */
-/******************************************************************************/
+/***************************************************************************************************/
+/*                                             Header                                              */
+/***************************************************************************************************/
 
 header {
-  background-color: black;
+  background-color: var(--kleur-achtergrond);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky; /*deze horen bijelkaar */
-  top: 0; /*deze horen bijelkaar */
+  position: sticky;
+  top: 0;
   padding: 0em 1em;
+  z-index: 9999;  /* ik doe dit zodat de header altijd op de bovenste laag zit */
 }
 
 header > button {
   background: none;
   border: none;
-  display: block; 
+  display: block;
 }
 
 header svg {
-  height: 24px;         
+  height: 24px;
   width: auto;
 }
 
+header h1 { 
+  order: 1; 
+}       
+#kerst-knop { 
+  order: 2; 
+}     
+header > button {
+  order: 3; 
+}  
+
 header a path {
-  fill: white;
+  fill: var(--kleur-tekst);
   transition: 0.1s;
 }
 
 header svg:hover path {
-  fill: rgb(46, 220, 179);
+  fill: var(--kleur-accent);
 }
 
 header a:focus {
-  background-color: rgb(255, 115, 0); ; 
+  background-color: var(--kleur-focus);
   border: none;
   outline: none;
-
 }
 
 header button:focus {
-  background-color: rgb(255, 115, 0); ; 
-  outline: none;  
+  background-color: var(--kleur-focus);
+  outline: none;
 }
 
 nav {
-  background-color: black;
+  background-color: var(--kleur-achtergrond);
   font-size: 1.5em;
   position: fixed;
   top: 0;
@@ -100,18 +136,42 @@ nav button {
 }
 
 nav a {
-  color: white;
+  color: var(--kleur-tekst);
   text-decoration: none;
   text-transform: uppercase;
 }
 
 nav a:hover {
-  color: rgb(46, 220, 179);
+  color: var(--kleur-accent);
   transition: 0.1s;
 }
 
 nav a:focus {
-  outline: 2px solid rgb(255, 115, 0);     
+  outline: 2px solid var(--kleur-focus);
+}
+
+
+#kerst-knop {
+  background-color: var(--kleur-hoofd);   
+  color: var(--kleur-tekst);
+  border: none;
+  padding: 0.7em 0.7em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 2em; 
+  transition: all 0.3s ease;
+  display: inline-flex;
+}
+
+#kerst-knop:hover {
+  background-color: var(--kleur-accent);  
+  transform: scale(1.05);            
+}
+
+#kerst-knop:focus {
+  outline: none;
+  background-color: var(--kleur-focus);   
+  box-shadow: 0 0 8px var(--kleur-focus);
 }
 
 
@@ -120,29 +180,15 @@ nav a:focus {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/******************************************************************************/
-								/* Main */
-/******************************************************************************/
+/***************************************************************************************************/
+/*                                            Main                                                 */
+/***************************************************************************************************/
 
 main {
-	padding-inline: 1rem;
-	line-height: 1.5em;
-  margin: 0 auto;      
-  max-width: 1200px;
+  padding-inline: 1rem;
+  line-height: 1.5em;
+  margin: 0 auto;
 }
-
 
 h2 {
   font-size: 2em;
@@ -156,53 +202,50 @@ h3 {
 }
 
 h4 {
-	font-size: 0.8em;
-	font-weight: 300;
-  }
-
-main > section:first-of-type > p {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.9em;
-    padding-bottom: 1em;
-    animation: glow 1s 4 alternate ease forwards; /* laternate = gaat heen en weer. forwards = blijf staan bij de laatste plek */
+  font-size: 0.8em;
+  font-weight: 300;
 }
-  
-@keyframes glow {
+
+main.index > section:first-of-type > h2 { 
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  animation: gloed 1s 4 alternate ease forwards;
+}
+
+@keyframes gloed {
   from {
-    color: white;
+    color: var(--kleur-tekst);
     text-shadow: none;
-    font-size: 0.9em; /* begin consistent */
+    font-size: 0.9em;
   }
   to {
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px rgb(46, 220, 179),
-                0 0 15px rgb(46, 220, 179);
+    color: var(--kleur-tekst);
+    text-shadow: 0 0 10px var(--kleur-accent), 0 0 15px var(--kleur-accent);
     font-size: 1.5em;
   }
 }
 
-main a {
-  background-color: rgb(108, 44, 236);
+main.index a {
+  background-color: var(--kleur-hoofd);
   padding: 0.5em;
-  color: white;
+  color: var(--kleur-tekst);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1em;
   display: inline-block;
-  margin: 1em 0em 1em 0em;
+  margin: 1em 0;
 }
 
-main a:hover {
-  background-color: rgb(46, 220, 179);
-  position: 1;
+main.index a:hover {
+  background-color: var(--kleur-accent);
 }
 
 main a:focus {
-  background-color: rgb(255, 115, 0); ; 
+  background-color: var(--kleur-focus);
   outline: none;
 }
-
 
 ul {
   list-style-type: none;
@@ -210,7 +253,67 @@ ul {
 
 main img {
   max-width: 100%;
-  /* width: 100%;       */
+}
+
+
+
+
+
+
+
+
+
+/***************************************************************************************************/
+/*                                        Merchandise pagina                                       */
+/***************************************************************************************************/
+
+main.merchandise > section:nth-of-type(2) article img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* afbeeling niet uitrekken bij verschillende scherm*/
+}
+
+main.merchandise > section:nth-of-type(2),
+main.merchandise > section:nth-of-type(4) {
+  padding-bottom: 3em;
+}
+
+.merchandise a {
+  display: block;
+  position: relative; /* 2e afbeelding precies op de 1e afbeeling zetten. anders zit het op de hele scherm */
+}
+
+.merchandise a img {
+  transition: 0.5s ease;
+}
+
+.merchandise a img:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.merchandise a:hover img:nth-of-type(1) {
+  opacity: 0;
+}
+
+.merchandise a:hover img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.merchandise a:focus {
+  outline: none;
+  border: 5px solid var(--kleur-focus);
+}
+
+.merchandise h3 a {
+  color: var(--kleur-tekst);
+  text-decoration: none;
+}
+
+.merchandise h3 a:hover {
+  color: var(--kleur-accent);
 }
 
 
@@ -222,36 +325,28 @@ main img {
 
 
 
-
-
-
-
-
-
-/******************************************************************************/
-								/* Footer */
-/******************************************************************************/
+/***************************************************************************************************/
+/*                                            Footer                                               */
+/***************************************************************************************************/
 
 footer {
   padding-inline: 1rem;
   padding-top: 5em;
   line-height: 1.5em;
-  max-width: 1200px;
 }
 
-footer a svg:nth-of-type(1){
+footer a svg:nth-of-type(1) {
   height: 20px;
 }
 
-footer svg:hover path{
-  fill: aqua;
+footer svg:hover path {
+  fill: var(--kleur-accent);
 }
 
-footer a:focus{
-  background-color: rgb(255, 115, 0); ; 
+footer a:focus {
+  background-color: var(--kleur-focus);
   outline: none;
 }
-
 
 footer img {
   height: 20px;
@@ -264,7 +359,7 @@ form {
 label {
   display: block;
   font-size: 1em;
-  padding: 1em 0em 0.2em 0em;
+  padding: 1em 0 0.2em 0;
 }
 
 input[type="text"],
@@ -275,79 +370,80 @@ input[type="email"] {
   border-radius: 0.5em;
   font-size: 1em;
 }
+
 input[required]:user-valid {
-  background: lightgreen;
+  background: var(--kleur-geldig);
 }
 
 footer button {
   margin-top: 20px;
   width: 100%;
   padding: 12px;
-  margin: 2em 0em 2em 0em;
-  background-color: black;
-  color: #fff;
+  margin: 2em 0;
+  background-color: var(--kleur-achtergrond);
+  color: var(--kleur-tekst);
   font-size: 16px;
   font-weight: bold;
-  border: solid 2px rgb(108, 44, 236);
+  border: solid 2px var(--kleur-hoofd);
   border-radius: 5px;
   cursor: pointer;
 }
 
 footer button:hover {
-  background-color: rgb(108, 44, 236);
+  background-color: var(--kleur-hoofd);
 }
 
 footer ul:nth-of-type(1) {
-	padding: 0;
+  padding: 0;
 }
 
-footer ul:nth-of-type(1) li a{
-	color: rgb(46, 220, 179);
+footer ul:nth-of-type(1) li a {
+  color: var(--kleur-accent);
 }
 
 footer ul:nth-of-type(1) li a:hover {
-	color: rgb(108, 44, 236);
+  color: var(--kleur-hoofd);
 }
 
 footer > section > article:nth-of-type(2) ul {
-	display: flex;
-	gap: 1em;
-	padding: 0;
+  display: flex;
+  gap: 1em;
+  padding: 0;
 }
 
 footer > section > article:nth-of-type(2) li a {
-  background-color: rgb(46, 220, 179);
-  display: flex; 
+  background-color: var(--kleur-accent);
+  display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;  
-  width: 40px;                 
+  border-radius: 50%;
+  width: 40px;
   height: 40px;
 }
 
-footer > section > article:nth-of-type(2) li a:hover{
-	scale: 1.2;
+footer > section > article:nth-of-type(2) li a:hover {
+  scale: 1.2;
 }
 
-footer > section > article:nth-of-type(2) li a:focus{
-	background-color: rgb(255, 115, 0); ;
+footer > section > article:nth-of-type(2) li a:focus {
+  background-color: var(--kleur-focus);
   outline: none;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  background-color: rgb(255, 115, 0); 
+  background-color: var(--kleur-focus);
   outline: none;
 }
 
 footer button:focus {
-  background-color: rgb(255, 115, 0);  
-  border: rgb(255, 115, 0); 
+  background-color: var(--kleur-focus);
+  border: var(--kleur-focus);
   outline: none;
 }
 
 footer span {
-  color: red;
+  color: var(--kleur-fout);
 }
 
 
@@ -359,24 +455,22 @@ footer span {
 
 
 
+/***************************************************************************************************/
+/*                                      formaat tablet 768px                                       */
+/***************************************************************************************************/
 
-/****************************************************************/
-/**************** formaat tablet 768px **************************/
-/****************************************************************/
-
-@media (min-width:48em) {
-  main > section:nth-of-type(2), footer > section {
+@media (min-width: 48em) {
+  main > section:nth-of-type(2),
+  main > section:nth-of-type(4),
+  footer > section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3em;
   }
 
-   
-
- 
-
-
-
+  main.merchandise > section:nth-of-type(2) article img {
+    height: 450px;
+  }
 }
 
 
@@ -387,76 +481,63 @@ footer span {
 
 
 
+/***************************************************************************************************/
+/*                                  Formaat desktop 1024px                                          /
+/***************************************************************************************************/
 
-
-
-/****************************************************************/
-/**************** Formaat  desktop 1024px ***********************/
-/****************************************************************/
-
-
-
-@media (min-width:64em) {
+@media (min-width: 64em) {
   header > button {
     display: none;
-    
- }
-  
+  }
+
   nav {
     position: static;
     translate: unset;
     padding: 0.5em;
     font-size: 1em;
-    
   }
-  
+
   nav button {
     display: none;
-    
   }
-  
+
   nav ul {
     display: flex;
-    gap: 1.5em; 
-    
-    
+    gap: 1.5em;
   }
-  
+
   nav a {
     display: flex;
     flex-direction: column;
     border: none;
-    
   }
-  
+
   header > a:last-of-type {
     display: flex;
     flex-direction: column;
-   
   }
 
-
-
-  main > section:nth-of-type(2), footer > section {
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
+  main > section:nth-of-type(2),
+  main > section:nth-of-type(4),
+  footer > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 3em;
+  }
 
+  main.merchandise > section:nth-of-type(2) article img {
+    height: 550px;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
+header h1 {  
+  order: 1; 
 }
 
+#kerst-knop {
+  order: 2; 
+}
 
-
-
-
+header nav { 
+  order: 3; 
+}
