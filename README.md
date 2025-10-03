@@ -189,19 +189,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="/readme-images/mobiel.png" width="375px" alt="uitomst opdracht 1">
+  <img src="/readme-images/tablet.png" width="375px" alt="uitomst opdracht 2">
+  <img src="/readme-images/desktop.png" width="375px" alt="uitomst opdracht 3">
+  <img src="/readme-images/mobiel_2.png" width="375px" alt="uitomst opdracht 4">
+  <img src="/readme-images/tablet_2.png" width="375px" alt="uitomst opdracht 5">
+  <img src="/readme-images/desktop_2.png" width="375px" alt="uitomst opdracht 6">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  De responsive van mijn website vind ik super cool. Ik vond cederen altijd altijd maar door dit vak heb ik zoveel geleerd en nu vind ik coderen erg leuk! :D
+  Hamburger menu en deze animatie vind ik heel cool. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="/readme-images/desktop.png" width="375px" alt="top 1">
+  <img src="/readme-images/animatie.png" width="375px" alt="top 2">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Javascript vind ik moeilijk daarom doe ik daar weinig aan.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
