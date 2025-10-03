@@ -100,23 +100,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Wat ik lastig vond was dat ik niet veel Engelse woorden die om een code te schrijven. Ik moest veel opzoeken totdat het werkt. Voor mijn voortganggesprek heb ik alleen een begin van mijn gekozen website omdat ik vooral bezig met oefeningen was. Wat ik moeilijk vond aan mijn gekozen webstie is de hamburger manu. Daarnaast vond ik het zo raar dat de afbeeldingen van mijn live versie niet werkt terwijl de offline versie wel werkt.
 <img src="/readme-images/voor_voortgang1.png" width="375px" alt="website offline">
 <img src="/readme-images/voor_voortgang2.png" width="375px" alt="website online">
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Docent was positief over mijn website dus ik kan verder werken.
 
 </details>
 
@@ -130,26 +120,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hamburger menu is goed gelukt doordat ik de oefening heb gemaakt. Ik vond het moeilijk maar nadat mijn hamburger menu gelukt was vond coderen erg leuk geworden. Ik vind het leuk om mooie en leuke website te maken :D
+  <img src="/readme-images/voor_voortgang2.png" width="375px" alt="afbeelding nagemaakte website Verknipt">
+  <img src="/readme-images/voor_voortgang2.1.png" width="375px" alt="afbeelding nagemaakte website Verknipt navigaties">
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Studentassistent heeft mij geholpen om juiste article te zetten waar het moet zijn.
+  - De studentassistent heeft gecheckt of mijn H1 waarin een logo correct staat.
 
 </details>
 
@@ -163,7 +145,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - knoppen zien eruit als knoppen en links zien eruit als links.
+  - Hover en focusstage zijn aanwezig.
+  - Alles staat op groen in de HTML-validator.
+  - De webstie kan de beweeging uitzetten als bezoeker dat niet wil hebben.
+  - Website gebruikt alt tag.
+  - H1 is een keer gerbruikt.
+  - H1, h2, h3 en p zitten op de juiste volgorde.
+  - Website heeft een andere mode. (kerstmode).
+
 
 </details>
 
@@ -177,26 +167,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Wat ik lastig vond van deze week is over de tag a. Op merchandise pagina heb ik een afbeeling die ook een link heeft om naar volgende pagina te gaan. Wat ik wil doen is een afbeelding en h2 het zelfde link hebben. Dus ik wil aan docent vragen om die a tag moet om de afbeeling en h2 heen? 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Docent heeft mij geholpen met coole hoverstage van afbeeldingen
+  - Docent heeft mij geholpen met goede formulier maken.
+  
 
 </details>
 
@@ -229,17 +208,3 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Bronnenlijst
-
-<details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
-
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
-
-</details>
