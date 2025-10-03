@@ -121,8 +121,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Hamburger menu is goed gelukt doordat ik de oefening heb gemaakt. Ik vond het moeilijk maar nadat mijn hamburger menu gelukt was vond coderen erg leuk geworden. Ik vind het leuk om mooie en leuke website te maken :D
-  <img src="/readme-images/voor_voortgang2.png" width="375px" alt="afbeelding nagemaakte website Verknipt">
-  <img src="/readme-images/voor_voortgang2.1.png" width="375px" alt="afbeelding nagemaakte website Verknipt navigaties">
+  <img src="/readme-images/voor_voortgang2.jpg" width="375px" alt="afbeelding nagemaakte website Verknipt">
+  <img src="/readme-images/voor_voorthang2.1.png" width="375px" alt="afbeelding nagemaakte website Verknipt navigaties">
 
 
 
